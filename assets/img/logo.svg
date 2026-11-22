@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Discord server icon: shown small and cropped to a circle, so everything
+       important sits inside the central circle and stays bold at 48 px. -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#1d35b8"/>
+      <stop offset="0.55" stop-color="#0c1660"/>
+      <stop offset="1" stop-color="#040722"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ff7a1a" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#454b58"/>
+      <stop offset="1" stop-color="#111318"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffc46b"/>
+      <stop offset="0.45" stop-color="#ff6d12"/>
+      <stop offset="1" stop-color="#c23d06"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#d4d9e2"/>
+      <stop offset="1" stop-color="#848c9b"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.6" stop-color="#e6e9f0"/>
+      <stop offset="1" stop-color="#aab1bf"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+    <pattern id="kerb" width="72" height="26" patternUnits="userSpaceOnUse">
+      <rect width="36" height="26" fill="#e3202b"/>
+      <rect x="36" width="36" height="26" fill="#ffffff"/>
+    </pattern>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <circle cx="512" cy="380" r="330" fill="url(#glow)"/>
+
+  <!-- speed streaks -->
+  <g opacity="0.3" stroke="#9db8ff" stroke-width="10" stroke-linecap="round">
+    <line x1="120" y1="300" x2="300" y2="300"/>
+    <line x1="100" y1="360" x2="280" y2="360"/>
+    <line x1="140" y1="420" x2="270" y2="420"/>
+    <line x1="745" y1="470" x2="920" y2="470"/>
+    <line x1="765" y1="530" x2="900" y2="530"/>
+  </g>
+
+  <!-- emblem: slanted badge with an orange "R" and a silver blade -->
+  <g filter="url(#shadow)" transform="translate(512 390) scale(1.15) translate(-510 -390)">
+    <path d="M330 220 L760 220 L690 560 L260 560 Z" fill="url(#badge)" stroke="#ff7a1a" stroke-width="8"/>
+    <path d="M354 240 L736 240 L672 540 L290 540 Z" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="5"/>
+    <!-- "FM": orange F, silver M, slanted like the badge -->
+    <g transform="translate(318 292) scale(0.9) skewX(-12)">
+      <path d="M0 0 L215 0 L215 52 L72 52 L72 98 L180 98 L180 148 L72 148 L72 220 L0 220 Z" fill="url(#orange)"/>
+      <path d="M232 0 L300 0 L338 96 L376 0 L444 0 L444 220 L384 220 L384 96 L352 178 L324 178 L292 96 L292 220 L232 220 Z" fill="url(#silver)"/>
+    </g>
+  </g>
+
+  <!-- the track: kerbs and white edge lines with the name between them -->
+  <g transform="translate(512 0) skewX(-14) translate(-512 0)">
+    <rect x="96" y="676" width="832" height="26" fill="url(#kerb)"/>
+    <rect x="96" y="706" width="832" height="12" fill="#ffffff"/>
+    <rect x="96" y="872" width="832" height="12" fill="#ffffff"/>
+    <rect x="96" y="888" width="832" height="26" fill="url(#kerb)"/>
+    <line x1="96" y1="795" x2="928" y2="795" stroke="#ffffff" stroke-opacity="0.22" stroke-width="8" stroke-dasharray="44 30"/>
+  </g>
+
+  <g transform="translate(482 852) skewX(-14)" filter="url(#shadow)">
+    <text x="0" y="0" text-anchor="middle" font-family="Arial Black, Impact, Helvetica, sans-serif" font-weight="900"
+          font-size="190" letter-spacing="16" fill="url(#text)" stroke="#0c1660" stroke-width="7" paint-order="stroke"><tspan fill="url(#orange)">X</tspan>64</text>
+  </g>
+</svg>

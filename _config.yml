@@ -1,0 +1,11 @@
+title: FM X64
+description: The original Xbox Forza Motorsport, recompiled for modern Windows PCs.
+baseurl: /fmx64
+url: https://warshack4874.github.io
+
+# Update posts live in _posts as YYYY-MM-DD-short-title.md
+permalink: /updates/:year/:month/:day/:title.html
+
+exclude:
+  - README.md
+  - HOW_TO_POST.md

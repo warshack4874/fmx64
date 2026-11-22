@@ -1,0 +1,53 @@
+---
+title: Updates
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Updates · FM X64</title>
+<meta name="description" content="News and changes in FM X64.">
+<link rel="icon" href="assets/img/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/icon.png" alt="">FM X64</a>
+    <nav class="nav">
+      <a href="./">Home</a>
+      <a href="install.html">Install</a>
+      <a class="on" href="updates.html">Updates</a>
+      <a href="https://github.com/warshack4874/fmx64/releases">Downloads</a>
+      <a href="https://discord.gg/Y23UNZnCue">Discord</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2>Updates</h2>
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li><a href="{{ site.baseurl }}{{ post.url }}"><div class="card">
+        <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 220 }}</p>
+      </div></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>FM X64 is an unofficial fan project. It is not affiliated with or endorsed by Microsoft, Xbox Game Studios or Turn 10 Studios. Forza Motorsport is a trademark of Microsoft Corporation.</p>
+  </div>
+</footer>
+
+</body>
+</html>

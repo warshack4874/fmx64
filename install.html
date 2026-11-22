@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install FM X64</title>
+<meta name="description" content="How to install FM X64 and add your copy of Forza Motorsport.">
+<link rel="icon" href="assets/img/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/img/icon.png" alt="">FM X64</a>
+    <nav class="nav">
+      <a href="./">Home</a>
+      <a class="on" href="install.html">Install</a>
+      <a href="updates.html">Updates</a>
+      <a href="https://github.com/warshack4874/fmx64/releases">Downloads</a>
+      <a href="https://discord.gg/Y23UNZnCue">Discord</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2>What you need</h2>
+    <div class="table-scroll">
+    <table>
+      <tr><th>Windows</th><td>Windows 10 or 11, 64-bit.</td></tr>
+      <tr><th>Graphics</th><td>Any Direct3D 11 graphics card.</td></tr>
+      <tr><th>The game</th><td>Your own copy of the original Xbox <em>Forza Motorsport</em> (2005, the retail release): either the game folder with <code>default.xbe</code> and <code>media</code>, or a disc image (<code>.iso</code> / <code>.xiso</code>).</td></tr>
+      <tr><th>Disk space</th><td>About 4 GB: a copy of the game files (about 3 GB) plus FM X64, the compiled game code and caches.</td></tr>
+    </table>
+    </div>
+    <p>Nothing else to install: FM X64 brings everything it needs, including the compiler that builds the game's converted code on your PC.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Steps</h2>
+    <ol class="steps">
+      <li><h3>Install</h3><p>Download the setup program (<code>FMX64-<em>version</em>-Setup.exe</code>) from the <a href="https://github.com/warshack4874/fmx64/releases/latest">releases page</a> and run it. It installs just for you, without admin rights, and adds FM X64 to the Start menu and the desktop.</p>
+        <p>Prefer no installer? Download the <code>.zip</code> instead and unzip it into a folder you can write to, for example <code>C:\Games\FM X64</code> (not under Program Files).</p></li>
+      <li><h3>Add game</h3><p>Open FM X64 and press <strong>Add game</strong>. Choose <code>default.xbe</code> in your game folder, or your disc image; you can also drop the folder or image on the window. If you put the game folder or image in the FM X64 folder first, the launcher finds it by itself.</p>
+        <p>The launcher checks that it is the supported retail version, copies the game into its own folder, converts the game's code and compiles it. This happens once and takes a few minutes; progress is shown in the window.</p></li>
+      <li><h3>Play</h3><p>Pick your settings and press <strong>Play</strong>.</p></li>
+    </ol>
+    <p>Everything stays in the FM X64 folder: <code>game</code> (your imported game), <code>data</code> (saves, logs, caches and the compiled code) and <code>fm1_launcher.ini</code> (settings). When a new version of FM X64 is installed, the launcher prepares the game again by itself. Uninstalling asks whether to keep your game and saves.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Settings worth knowing</h2>
+    <div class="table-scroll">
+    <table>
+      <tr><th>Picture shape</th><td>"Same as the window" follows your screen. 21:9, 32:9 and 48:9 widen the view.</td></tr>
+      <tr><th>Span all monitors</th><td>One view across all your monitors. Use bezel correction if the picture doesn't line up across monitor frames.</td></tr>
+      <tr><th>Frame rate</th><td>30 (original), 60, Custom (unlocked with a cap you choose) or Unlocked.</td></tr>
+      <tr><th>VSync</th><td>On by default. Off allows tearing in borderless fullscreen for the lowest latency.</td></tr>
+      <tr><th>Internal resolution</th><td>How many times the original 480 lines the game is drawn at. Upscaling uses AMD FSR 1.</td></tr>
+      <tr><th>Benchmark</th><td>Choose a track and press Benchmark: the game's AI drives a lap and the frame rate is measured.</td></tr>
+    </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Controls</h2>
+    <p>Xbox controllers work as on the console. Keyboard (game window in front):</p>
+    <div class="table-scroll">
+    <table>
+      <tr><th>Drive</th><td><kbd>W</kbd> accelerate, <kbd>S</kbd> brake, <kbd>A</kbd> / <kbd>D</kbd> steer</td></tr>
+      <tr><th>Menus</th><td>Arrow keys, <kbd>Space</kbd> A, <kbd>Esc</kbd> / <kbd>Backspace</kbd> B, <kbd>X</kbd> X, <kbd>C</kbd> Y, <kbd>E</kbd> black, <kbd>Q</kbd> white, <kbd>Enter</kbd> Start, <kbd>Tab</kbd> Back</td></tr>
+      <tr><th>Window</th><td><kbd>Alt</kbd>+<kbd>Enter</kbd> fullscreen on / off</td></tr>
+    </table>
+    </div>
+    <p>Keys, steering smoothing and dead zone can be changed in <code>fm1_launcher.ini</code>.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Problems</h2>
+    <p><strong>"Not the supported version":</strong> FM X64 supports the retail release of the game. Other builds are refused instead of being run wrongly.</p>
+    <p><strong>"This folder can't be used":</strong> the launcher keeps the game and saves next to itself, so its folder must be one you can write to. Use the installer, or move the unzipped folder out of Program Files.</p>
+    <p><strong>Something broke after an update:</strong> press <strong>Repair / re-import</strong> at the bottom of the launcher and choose <strong>Rebuild the game code</strong>.</p>
+    <p><strong>Other problems:</strong> include <code>fm1.log</code> from the <code>data</code> folder when you report them.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>FM X64 is an unofficial fan project. It is not affiliated with or endorsed by Microsoft, Xbox Game Studios or Turn 10 Studios. Forza Motorsport is a trademark of Microsoft Corporation.</p>
+    <p>FM X64 contains no game code or data. You need your own copy of the game.</p>
+  </div>
+</footer>
+
+</body>
+</html>
