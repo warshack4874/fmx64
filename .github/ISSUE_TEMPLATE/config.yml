@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: No GitHub account? Report on Discord
+    url: https://discord.gg/Y23UNZnCue
+    about: Post your report with a screenshot and fm1.log on the FM X64 Discord server.
+  - name: Install guide and common problems
+    url: https://warshack4874.github.io/fmx64/install.html#problems
+    about: Some problems have a quick fix; check here first.

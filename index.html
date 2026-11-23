@@ -22,6 +22,7 @@
       <a href="updates.html">Updates</a>
       <a href="https://github.com/warshack4874/fmx64/releases">Downloads</a>
       <a href="https://discord.gg/Y23UNZnCue">Discord</a>
+      <a href="bugs.html">Report a bug</a>
     </nav>
   </div>
 </header>
@@ -42,6 +43,16 @@
 <main>
 <section>
   <div class="wrap">
+    <h2>Showcase</h2>
+    <div class="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/qNC1_A8fA7c" title="FM X64 showcase video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <p class="note">Captured in FM X64 at 2560x1440, 60 fps. <a href="https://youtu.be/qNC1_A8fA7c">Watch on YouTube</a>.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <h2>What it is</h2>
     <p>FM X64 turns the 2005 Xbox game into a native 64-bit Windows program. It is not an emulator running the whole console: the game's own code is converted into C and compiled on your PC by the launcher, and the Xbox's graphics, sound and system calls are replaced with Direct3D 11, XAudio2 and Windows equivalents.</p>
     <p>You point the launcher at your game folder or disc image, it prepares the game once, and you press Play.</p>
@@ -54,13 +65,15 @@
     <div class="grid">
       <div class="card"><h3>Native widescreen</h3><p>16:9 through the game's own widescreen mode, plus 21:9, 32:9 and 48:9 with a wider view instead of a stretched one. Menus and HUD stay in proportion.</p></div>
       <div class="card"><h3>Multi-monitor</h3><p>Span three screens as one continuous view, even with mixed resolutions such as 1080p | 1440p | 1080p. HUD on the middle screen, bezel correction.</p></div>
-      <div class="card"><h3>High frame rates</h3><p>The original 30 fps, a 60 fps mode, a custom frame cap, or unlocked. Game speed and physics stay correct at any rate.</p></div>
-      <div class="card"><h3>Higher resolution</h3><p>Render at up to 6x the original resolution, with AMD FSR 1 upscaling and sharpening, and anisotropic texture filtering.</p></div>
+      <div class="card"><h3>High frame rates</h3><p>The original 30 fps, a 60 fps mode, a custom frame cap, or unlocked. Game speed and physics stay correct at any rate. Optional frame generation doubles the pictures shown.</p></div>
+      <div class="card"><h3>Higher resolution</h3><p>Render at up to 6x the original resolution, with AMD FSR 1 or AMD FSR 4 upscaling, and anisotropic texture filtering.</p></div>
+      <div class="card"><h3>Widescreen menus</h3><p>An option that fills modern screens in the menus too, while every button and panel stays where the game puts it.</p></div>
       <div class="card"><h3>5.1 surround sound</h3><p>The game's sound system rebuilt on XAudio2 with its reverb, in 5.1 or stereo.</p></div>
       <div class="card"><h3>Controllers and keyboard</h3><p>Xbox controllers through XInput, plus rebindable keyboard controls with steering smoothing.</p></div>
       <div class="card"><h3>Benchmark mode</h3><p>Pick a track and let the game's own AI drive a lap while the frame rate is measured and shown on screen.</p></div>
       <div class="card"><h3>Your saves stay local</h3><p>Career, garage, paint jobs and replays are saved in the launcher's data folder.</p></div>
     </div>
+    <p class="callout">Performance depends on your PC's hardware, and your experience may vary. The frame rates mentioned on this site were measured on one test PC; slower CPUs and graphics cards will reach lower frame rates, and some options (such as FSR 4 and frame generation) need specific graphics cards.</p>
   </div>
 </section>
 
@@ -78,7 +91,7 @@
 <section>
   <div class="wrap">
     <h2>Status</h2>
-    <p class="callout">Early preview. Every main mode works in testing: Arcade, Free Run, Time Trial and Career, the garage, paint and decals, replays and saves. Split screen, system link and Xbox Live are not supported yet. Read the <a href="updates.html">updates</a> for what changed, and come talk about it, report problems and see work in progress on the <a href="https://discord.gg/Y23UNZnCue">Discord server</a>.</p>
+    <p class="callout">Early preview. Every main mode works in testing: Arcade, Free Run, Time Trial and Career, the garage, paint and decals, replays and saves. Split screen, system link and Xbox Live are not supported yet. Performance and stability depend on your hardware and may vary. Read the <a href="updates.html">updates</a> for what changed, <a href="bugs.html">report a bug</a> if something goes wrong, and come talk about it and see work in progress on the <a href="https://discord.gg/Y23UNZnCue">Discord server</a>.</p>
   </div>
 </section>
 </main>
@@ -87,7 +100,7 @@
   <div class="wrap">
     <p>FM X64 is an unofficial fan project. It is not affiliated with or endorsed by Microsoft, Xbox Game Studios or Turn 10 Studios. Forza Motorsport is a trademark of Microsoft Corporation.</p>
     <p>FM X64 contains no game code or data. You need your own copy of the game.</p>
-    <p>Uses AMD FidelityFX Super Resolution 1 (MIT) and Zydis (MIT).</p>
+    <p>Uses AMD FidelityFX Super Resolution 1 and the AMD FidelityFX SDK (FSR 4) (MIT), and Zydis (MIT).</p>
   </div>
 </footer>
 

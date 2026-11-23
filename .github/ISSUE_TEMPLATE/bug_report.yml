@@ -1,0 +1,86 @@
+name: Bug report
+description: Something in FM X64 doesn't work or looks wrong.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing FM X64! Please fill in as much as you can. One problem per report.
+        Please don't attach game files or anything from the `game` folder.
+  - type: input
+    id: version
+    attributes:
+      label: FM X64 version
+      description: Shown at the top right of the launcher (for example 0.1.4).
+      placeholder: "0.1.4"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen
+      description: The steps that lead to the problem, and whether it happens every time or only sometimes.
+      placeholder: |
+        1. Career > The Garage > Customize Paint
+        2. Apply a decal, remove it, apply another
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or video
+      description: Drag and drop images or a short video here if you have them.
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 24H2"
+  - type: input
+    id: hardware
+    attributes:
+      label: CPU and graphics card
+      placeholder: "Ryzen 7 5800X, Radeon RX 7800 XT (driver 25.x)"
+  - type: dropdown
+    id: upscaling
+    attributes:
+      label: Upscaling
+      options:
+        - AMD FSR 1
+        - AMD FSR 4
+        - Not sure
+  - type: dropdown
+    id: options
+    attributes:
+      label: Other options turned on
+      multiple: true
+      options:
+        - Frame generation
+        - Widescreen menus
+        - Span all monitors
+        - Fullscreen
+        - Graphics path Direct (experimental)
+        - Frame rate other than 30 (original)
+  - type: textarea
+    id: log
+    attributes:
+      label: Log file
+      description: |
+        Drag and drop `fm1.log` from the `data` folder in your FM X64 folder (and `fm1_launcher.ini` if settings matter).
+        The log can contain folder paths that include your Windows user name; you can replace it before attaching.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before sending
+      options:
+        - label: I'm using my own copy of the original Xbox Forza Motorsport.
+          required: true
+        - label: I checked the [open reports](https://github.com/warshack4874/fmx64/issues) and this one isn't there yet.
