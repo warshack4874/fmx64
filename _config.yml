@@ -9,3 +9,10 @@ permalink: /updates/:year/:month/:day/:title.html
 exclude:
   - README.md
   - HOW_TO_POST.md
+
+# Atom feed of the update posts at /fmx64/feed.xml (for RSS readers and Discord bots such as MonitoRSS).
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml
+author: FM X64
